@@ -20,7 +20,7 @@ html {
 body {
 /*	background: $white; */
     background: #FBF5E6;
-  font: 18px/1.4 $helvetica;
+  font: 14px/1.4 $helvetica;
   color: $darkGray;
 }
 
@@ -46,18 +46,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h4 {
@@ -66,7 +66,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 14px 0;
 }
 
 a {
@@ -79,7 +79,7 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: 14px 0;
   padding-left: 30px;
 }
 
