@@ -26,20 +26,13 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <div id="search">
-            <script>
-              (function() {
-               var cx = '017044854846871984599:mazkto_6qua';
-               var gcse = document.createElement('script');
-               gcse.type = 'text/javascript';
-               gcse.async = true;
-               gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;  
-               var s = document.getElementsByTagName('script')[0];
-               s.parentNode.insertBefore(gcse, s);
-             })();
-            </script>
-            <gcse:search></gcse:search>
-          </div>
+        <div id="search">
+             <form role="search" method="get" action="{{ site.baseurl }}//search/">
+                 <input id="searchString" name="searchString"
+                        placeholder="検索" type="text">
+                 <input id="searchButton" name="googleSearchName" type="submit" value="Search">
+             </form>
+         </div>
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
