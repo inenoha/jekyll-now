@@ -79,7 +79,7 @@ gems:
   - jekyll-paginate
 
 paginate: 5
-paginate_path: "mikro-und-makro/page:num"
+paginate_path: "/mikro-und-makro/page:num"
 
 # Exclude these files from your production _site
 exclude:

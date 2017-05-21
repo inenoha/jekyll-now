@@ -17,8 +17,19 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Permalink</a>
     </article>
   {% endfor %}
-    <ul>
-      {% if paginator.previous_page %}<li><a href="/mikro-und-makro/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}/{% endif %}">新しい記事</a></li>{% endif %}
-      {% if paginator.next_page %}<li><a href="/mikro-und-makro/page{{ paginator.next_page }}/">古い記事</a></li>{% endif %}
-    </ul>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">新しい記事</a>
+  {% else %}
+  <span class="previous">新しい記事</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">古い記事</a>
+  {% else %}
+  <span class="next ">古い記事</span>
+  {% endif %}
+</div>
 </div>
