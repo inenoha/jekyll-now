@@ -9,6 +9,8 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -21,7 +23,7 @@ body {
 /*	background: $white; */
     background: #FBF5E6;
   font: 16px/1.4 $helvetica;
-  font-family: sans-serif;
+  font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
   color: $darkGray;
 }
 
