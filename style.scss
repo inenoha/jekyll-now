@@ -289,3 +289,68 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+#gsc{
+    width:100%;
+     
+    margin:0 auto;
+    position:relative;
+     
+}
+ 
+#gsc td {
+    border: none;    
+}
+ 
+#gsc .gsc-control-cse, 
+#gsc .gsc-control-cse-ja,
+#gsc .gsib_a{
+    margin:0 !important;
+    padding:0 !important;
+}
+/* テキスト入力フォームとボタンの位置 */
+#gsc table.gsc-search-box td,
+#gsc table.gsc-search-box input {
+    vertical-align: top !important;
+}
+/* テキスト入力フォーム */
+#gsc input[type="text"]{
+    border: 1px solid #dddddd !important;
+    height:25px !important;
+    margin-top: 100px;
+}
+ 
+ 
+#gsc input[type="text"]:focus {
+    border: 2px solid #b2e0eb !important;
+    outline: 0;  /*safariの自動フォーカスを切る */
+}
+ 
+/* テキスト入力フォームの影を消す */
+#gsc #gsc-iw-id1{
+    border:none !important;
+}
+/* テキスト入力フォームの背景画像位置調整 */
+#gsc #gs_tti0 input{
+    background-position:5px 5px !important;
+}
+/* ボタンの色 */
+#gsc input.gsc-search-button {
+background: #d2d2d2 !important;
+background: -ms-linear-gradient(top,  #008ee1 0%,#008ee1 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ee1', endColorstr='#008ee1',GradientType=0 ); /* IE6-9 */
+border: 1px solid #d2d2d2 !important;
+}
+/* ボタンの位置調整と角丸消し */
+#gsc .gsc-search-button{
+    margin:0 0 0 -16px !important;
+    border-radius:0px;
+}
+/* 入力時に出る「×」ボタンの位置調整 */
+ 
+/* 入力時に出る×ボタン -- Firefox位置調整 -- */
+#gsc .gsib_b span{
+        box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        padding:2px 0 0 0;
+}
