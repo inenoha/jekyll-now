@@ -14,6 +14,9 @@ layout: default
 <!--        {{ post.excerpt }} -->
       </div>
 
+      <div class="date">
+	Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Permalink</a>
     </article>
   {% endfor %}
